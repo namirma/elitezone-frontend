@@ -1,0 +1,356 @@
+html,
+body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    line-height: 2;
+    cursor: default;
+    outline: none;
+    text-decoration: none;
+}
+
+/* For WebKit Browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scroll) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(182, 210, 243);; /* Track background color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 67, 118);
+  }
+
+:root {
+    --Primary-EZ: rgb(10, 105, 214);
+    --Secondary-EZ: #0ACFD6;
+    --CTA-EZ: #d60a69;
+
+    --Tint-Primary-01: #3B87DE;
+    --Tint-Primary-02: #5496E2;
+    --Tint-Primary-03: #6CA5E6;
+    --Tint-Primary-04: #85B4EB;
+    --Tint-Primary-05: #9DC3EF;
+    --Tint-Primary-06: rgb(182, 210, 243);
+    --Tint-Primary-07: rgb(206, 225, 247);
+    --Tint-Primary-08: rgb(231, 240, 251);
+    --Tint-Primary-09: rgba(10, 105, 214, .03);
+
+    --Tone-Primary-01: #226EC5;
+    --Tone-Primary-02: #2D70BC;
+    --Tone-Primary-03: #3972B4;
+    --Tone-Primary-04: #4575AB;
+    --Tone-Primary-05: #5177A2;
+    --Tone-Primary-06: #5D799A;
+    --Tone-Primary-07: rgba(104, 123, 145);
+    --Tone-Primary-08: #747E89;
+
+    --Shade-Primary-01: #0854AB;
+    --Shade-Primary-02: #074A96;
+    --Shade-Primary-03: #063e7f;
+    --Shade-Primary-04: #05356B;
+    --Shade-Primary-05: rgb(4, 42, 86);
+    --Shade-Primary-06: rgb(3, 32, 64);
+    --Shade-Primary-07: rgb(2, 21, 43);
+    --Shade-Primary-08: rgb(1, 11, 21);
+
+    --Secondary-Guide-01: #068186;
+    --Secondary-Guide-02: #068186;
+    --Secondary-Guide-03: #089BA1;
+    --Secondary-Guide-04: #09B5BB;
+    --Secondary-Guide-05: #0ACFD6;
+    --Secondary-Guide-06: #25D4DB;
+    --Secondary-Guide-07: #40DADF;
+    --Secondary-Guide-08: #5CDFE4;
+    --Secondary-Guide-09: #5CDFE4;
+
+    --Text-EZ-01: rgb(2, 67, 118);
+    --Text-EZ-02: rgb(1, 44, 73);
+    --Text-EZ-03: rgb(0, 53, 95);
+    --Text-EZ-04: rgba(0, 53, 95, .5);
+
+    --Gray-EZ-01: #6E6E6E;
+    --Gray-EZ-02: #707070;
+    --Gray-EZ-03: #585858;
+    --Gray-EZ-04: #5D5D5D;
+    --Gray-EZ-05: #9D9D9D;
+
+    --SemanticColor-Success: #00AD9A;
+    --SemanticColor-Error: #F32916;
+    --SemanticColor-Warning: #FFC103;
+    --SemanticColor-Info: #007BFF;
+
+    --Disable-Button-BackGround01: rgba(2, 67, 118, .05);
+    --Disable-Button-BackGround02: rgba(2, 67, 118, .15);
+    --Disable-Button-BackGround03: rgba(2, 67, 118, .3);
+    --Disable-Button-Text01: white;
+    --Disable-Button-Text02: rgba(2, 67, 118, .4);
+    --Disable-Button-Text03: rgba(2, 67, 118, .5);
+
+    --Divider-Background-Color: #D1E9FC;
+
+    --Input-Border: rgba(10, 105, 214, .2);
+    --Hover-On-Items: rgba(10, 105, 214, .1);
+    --PlaceHolder: rgba(2, 67, 118, .4);
+    --Scroll-Bar-Thumb: rgba(2, 67, 118, .5);
+    --Scroll-Bar-Thumb-Hover: rgba(2, 67, 118, .7);
+
+    --Success-Border: var(--Secondary-EZ);
+
+    /*Edge of Element */
+    --edge-size: 1.2em;
+
+    /*Shadow of Element */
+    --Box-Shadow: 0 0 10px rgba(2, 67, 118, .7);
+    --Box-Shadow-Transition: .7s ease-in-out;
+
+    /*Edge of Button */
+    --edge-size-button: .6em;
+    /* Just For Gen-2 Button */
+    --border-width: .25em;
+
+    /* Edge of Role Button */
+    --edge-size-button-role: .4em;
+
+    /*Shadow of Button */
+    --Button-Shadow-01: 4px 4px 1px rgb(142, 7, 70);
+    --Button-Shadow-02: 5px 5px 3px rgb(142, 7, 70);
+    --Button-Shadow-03: 4px 4px 1px var(--Shade-Primary-03);
+    --Button-Shadow-04: 0px 4px 1px rgb(142, 7, 70);
+    --Button-Shadow-05: 0px 4px 1px var(--Shade-Primary-03);
+
+    --Button-Shadow-Transition: .7s ease-in-out;
+
+    /* Overlay Background Color And Intensity of Blur */
+    --Overlay-Background-Color: rgba(2, 21, 43, .1);
+    --Overlay-Background-Blur: blur(2px);
+
+    /* Drop Shadow For Switch */
+    --Switch-Drop-Shadow-Off: -1px 1px 2px rgba(0, 0, 0, 0.5);
+    --Switch-Drop-Shadow-On: -1px 1px 2px rgba(0, 0, 0, 0.7);
+
+    /* Profiles Title Font */
+    --Title-Font: 'YekanBakhFaNum-semiBold';
+    --Title-Font-Size: 14px;
+
+    /* Space Between Digits */
+    --letterSpacing: 2px;
+
+    /* Radius */
+    --Small-Radius: 4px;
+    --Medium-Radius: 8px;
+    --Large-Radius: 16px;
+}
+
+::selection {
+    background-color: var(--Text-EZ-01);
+    color: white
+}
+
+/* Inputs */
+input[type="text"] {
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px;
+    font-family: 'YekanBakhFaNum-regular';
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid var(--Input-Border);
+    color: var(--Text-EZ-01);
+    touch-action: manipulation;
+}
+
+input[type="email"] {
+    direction: ltr;
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid var(--Input-Border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    margin: 0;
+    padding: 8px;
+    touch-action: manipulation;
+}
+
+input[type="password"] {
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px;
+    font-family:  /* Iran */ 'YekanBakh-regular';
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid var(--Input-Border);
+    color: var(--Text-EZ-01);
+    touch-action: manipulation;
+
+}
+
+textarea {
+    text-align: start;
+    direction: rtl;
+    width: 100%;
+    height: 175px;
+    border: 1px solid var(--Input-Border);
+    border-radius: 8px;
+    padding: 14px 8px;
+    margin: 0;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: auto;
+    font-family:  /* Iran */ 'YekanBakh-regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    touch-action: manipulation;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border: 1px solid var(--Primary-EZ);
+    outline: 0;
+    touch-action: manipulation;
+}
+
+/* Disable Arrows for Number Input --  Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Disable Arrows for Number Input -- Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+::placeholder {
+    font-family: 'YekanBakhFaNum-Light';
+    font-size: 14px;
+    color: var(--PlaceHolder);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--Input-Border);
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    touch-action: manipulation;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    input[type="checkbox"]:hover {
+        background-color: var(--Input-Border);
+    }
+}
+
+input:checked {
+    background-color: var(--Primary-EZ) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 80%;
+    height: 80%;
+    transform: scale(0);
+    transition: 100ms transform ease-in-out;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+    background-color: white;
+}
+
+input[type="checkbox"]:disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+
+.A_Style {
+    box-sizing: border-box;
+    will-change: auto;
+}
+
+.B_Style,
+.B_Style_withoutHover,
+.C_Style,
+.F_Style {
+    -webkit-filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .2));
+    will-change: filter;
+    border-radius: var(--Large-Radius);
+    transition: .2s ease;
+}
+
+.E_Style,
+.D_Style {
+    border-radius: var(--Medium-Radius);
+}
+
+
+@media (max-width:1600px) {
+    .A_Style {
+        padding: 0 64px;
+    }
+}
+
+@media (min-width: 1281px) and (hover: hover) and (pointer: fine) {
+    .B_Style:hover {
+        -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, .5));
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, .5));
+    }
+}
+
+@media (max-width: 700px) {
+    .A_Style {
+        padding: 0;
+    }
+
+    .E_Style {
+        border-radius: 0;
+    }
+
+    .B_Style {
+        border-radius: 0;
+    }
+
+    .C_Style {
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    .B_Style_withoutHover {
+        -webkit-filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, .2));
+        filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, .2));
+        border-radius: 0;
+    }
+}

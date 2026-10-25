@@ -1,0 +1,311 @@
+.underlayer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--Primary-EZ);
+}
+
+.header-style {
+    max-width: 1320px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 75vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.BigHero img {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    will-change: auto;
+    object-fit: contain;
+    overflow: auto;
+}
+
+.header-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: fit-content;
+    margin-left: 32px;
+}
+
+.HeaderTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'YekanBakhFaNum-semiBold';
+    height: fit-content;
+    direction: rtl;
+    text-align: right;
+}
+
+.HeaderTitle-Fixed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.changeable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'YekanBakhFaNum-ExtraBold';
+    direction: rtl;
+}
+
+.changeable-Item {
+    -webkit-animation-name: ChandgeableAnimation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-play-state: running;
+    animation-name: ChandgeableAnimation;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    border-radius: 8px;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    padding: 0 0 0 8px;
+    height: inherit;
+    box-sizing: border-box;
+    color: var(--Secondary-EZ);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+
+@-webkit-keyframes ChandgeableAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-100%);
+    }
+
+    40% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-300%);
+    }
+
+    80% {
+        transform: translateY(-400%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes ChandgeableAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-100%);
+    }
+
+    40% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-300%);
+    }
+
+    80% {
+        transform: translateY(-400%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+.HeaderText {
+    text-align: right;
+    box-sizing: border-box;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'YekanBakh-Light';
+    padding: 0px 0 20px 0;
+    font-size: 28px;
+    margin-top: 2px;
+}
+
+.GoToDownArrow img {
+    width: 20px;
+    opacity: .8;
+    transform-origin: top;
+    animation-name: slide;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+.Header_Button_Container {
+    margin-right: 4px;
+    width: fit-content;
+    border-radius: var(--Large-Radius);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@media (min-width: 701px) {
+    .GoToDownArrow {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        position: absolute;
+        left: 50%;
+        top: 96%;
+        transform: translate(-50%, -96%) rotate(-90deg); /* Maintain rotation */
+    }
+}
+
+@media (max-width: 1600px) {
+    .header-content {
+        margin: 0 64px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .HeaderTitle {
+        font-size: 32px;
+    }
+
+    .HeaderText {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .HeaderTitle {
+        font-size: 28px;
+    }
+
+    .GoToDownArrow {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .HeaderTitle {
+        font-size: 24px;
+    }
+
+    .HeaderText {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 900px) {
+    .HeaderTitle {
+        font-size: 20px;
+    }
+
+    .HeaderText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .HeaderTitle {
+        font-size: 20px;
+    }
+
+    .HeaderText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-content {
+        height: 90vh;
+        /* height: max-content; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .BigHero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BigHero img {
+        display: flex;
+        max-width: 450px;
+        width: 100%;
+    }
+
+
+    .header-group {
+        width: 100%;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 48px;
+    }
+
+    .HeaderTitle {
+        font-size: 6vw;
+    }
+
+    .HeaderText {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 4.2vw;
+        padding: 12px 0 24px 0;
+    }
+
+    .Header_Button_Container {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+}

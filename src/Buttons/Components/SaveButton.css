@@ -1,0 +1,24 @@
+.savebutton {
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 53px;
+    border: none;
+    background: var(--Primary-EZ);
+    color: white;
+    cursor: pointer;
+    border-radius: var(--Medium-Radius);
+    overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+    .savebutton {
+        font-size: 14px;
+    }
+
+}
+
+

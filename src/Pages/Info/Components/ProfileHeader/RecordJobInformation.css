@@ -1,0 +1,19 @@
+.record-job-information {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 32px; */
+    text-align: right;
+}
+
+.record-job-information div:nth-child(1) {
+    font-family: 'YekanBakhFaNum-semiBold';
+    font-size: 18px;
+    color: var(--Text-EZ-01);
+}
+.record-job-information div:nth-child(2) {
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}

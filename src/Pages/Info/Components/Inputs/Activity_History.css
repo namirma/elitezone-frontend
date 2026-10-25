@@ -1,0 +1,172 @@
+.workhistory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Label */
+.workhistory-label {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding-bottom: 8px;
+}
+
+.workhistory-label label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+}
+
+.workhistory-label span {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color:var(--SemanticColor-Error);
+}
+
+/* Container for Multi Select Shape and List of Works */
+.workhistory-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.workhistory-container-active {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid var(--Primary-EZ);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+/* Multi Select No Active*/
+.multiselect-work {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--Input-Border);
+    cursor: pointer;
+}
+
+.multiselect-work-content-placeholder {
+    font-family:  /* Iran */ 'YekanBakh-Light' !important;
+    font-size: 14px;
+    color: var(--PlaceHolder);
+}
+
+.multiselect-work-content-item {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+}
+
+.multiselect-work .multiselect-work-img {
+    display: flex;
+    align-items: center;
+}
+.multiselect-work .multiselect-work-img-hover {
+    display: none;
+    align-items: center;
+}
+
+.multiselect-work:hover .multiselect-work-img {
+    display: none;
+    align-items: center;
+}
+.multiselect-work:hover .multiselect-work-img-hover {
+    display: flex;
+    align-items: center;
+}
+/* Multi Select Active */
+.multiselect-work-active {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.multiselect-work-content {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--PlaceHolder);
+}
+.multiselect-work-active .multiselect-work-img {
+    display: none;
+    align-items: center;
+}
+.multiselect-work-active .multiselect-work-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+/* Divder Between Multi Select And List */
+.workhistory-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Divider-Background-Color);
+}
+
+/* List of Works */
+.list-workes {
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 8px 8px;
+    overflow-y: scroll;
+    direction: rtl;
+    
+}
+
+.list-workes-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.list-workes-items-container div:nth-child(6){
+    border-bottom: none;
+}
+.list-workes-items {
+    direction: ltr;
+    text-align: end ;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:  /* Iran */ 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+    cursor: pointer;
+}
+.list-workes-items:hover {
+    background-color: var(--Hover-On-Items);
+}
+
+@media (max-width: 700px) {
+    .workhistory-container {
+        width: 100%;
+    }
+    .workhistory-container-active {
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.part1 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+.part1-img {
+    max-width: 100%;
+}
+
+.part1-name-phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 18px;
+    color: var(--Text-EZ-01);
+    padding-right: 16px;
+}
+
+.part1-name-phone div:nth-child(2) {
+    font-family: 'YekanBakhfaNum-Light';
+    font-size: 18px;
+}
+
+.part1-name-phone div:nth-child(3) {
+    font-family: 'YekanBakhfaNum-Light';
+    font-size: 16px;
+}
+
+.part1-edit {
+    align-self: center;
+    margin-right: auto;
+    padding-left: 24px;
+}
+
+.part1-edit img {
+    width: 24px;
+}
+
+@media (max-width: 1280px) {
+    .part1-name-phone {
+        font-size: 16px;
+    }
+
+    .part1-name-phone div:nth-child(2) {
+        font-size: 16px;
+    }
+}

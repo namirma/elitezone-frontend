@@ -1,0 +1,109 @@
+.products-brand{
+    display: flex;
+    flex-direction: column;
+}
+
+.products-brand label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 8px;
+}
+
+.products-brand-template {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 53px;
+    margin-bottom: 8px;
+}
+
+.products-brand-template span {
+    width: 100%;
+}
+
+.products-brand-template-imgtemp img:nth-child(1) {
+    display: block;
+    position: absolute;
+    height: auto;
+    top:50%;
+    left: 16px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.products-brand-template-imgtemp img:nth-child(2) {
+    display: none;
+}
+.products-brand-template-imgtemp:hover img:nth-child(1) {
+    display: none;
+}
+.products-brand-template-imgtemp:hover img:nth-child(2) {
+    display: block;
+    position: absolute;
+    height: auto;
+    top:50%;
+    left: 16px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.products-brand-template-imgtemp img:nth-child(3) {
+    display: block;
+    position: absolute;
+    height: auto;
+    top:50%;
+    left: 16px;
+    transform: translate(0, -50%);
+    cursor: default;
+}
+
+.disable-products-brand{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.disable-products-brand label {
+    padding: 0;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--Disable-Button-Text03);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.disable-products-brand input[type="checkbox"] {
+    padding: 0;
+    margin: 0;
+}
+
+.products-brand-entered {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 8px 4px 22px;
+}
+
+.products-brand-entered-item1 {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    align-items: center;
+}
+.products-brand-entered-item1 span:nth-child(1) {
+    display: flex;
+    align-items: center;
+
+}
+.products-brand-entered-item1 span:nth-child(2) {
+    padding-right: 8px;
+}
+
+
+
+
+
+

@@ -1,0 +1,133 @@
+.My_Badges {
+    padding-top: 32px;
+    max-width: inherit;
+    background-color: white;
+}
+
+.My_Badges_Header {
+    background-color: var(--Divider-Background-Color);
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 16px;
+    color: var(--Text-EZ-01);
+    padding: 4px 16px;
+    margin-bottom: 16px;
+}
+
+.My_Badges_Content {
+    padding: 0px 16px 32px;
+}
+
+.check {
+    position: relative;
+}
+
+.Badges_Container {
+    margin: 24px 0 32px 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    direction: rtl;
+    background-color: rgb(231, 231, 231);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.Badges_Container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.Badges-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--Divider-Background-Color);
+    user-select: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    z-index: 2;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.Badges-Button-Left {
+    margin-left: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    box-sizing: border-box;
+    opacity: .8;
+}
+
+.Badges-Button-Right {
+    margin-right: 8px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+    box-sizing: border-box;
+    opacity: .8;
+}
+
+.carousel-body-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel-body {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.carousel-body > div {
+    margin:  0 auto;
+    display: flex
+}
+
+.carousel-body::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-items {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.NoBadgeRecived {
+    font-family: 'YekanBakh-Regular';
+    font-size: 16px;
+    color: var(--Text-EZ-01)
+}
+
+.carousel-items img {
+    cursor: pointer;
+    width: 140px;
+    margin: 10px;
+}
+
+@media (max-width: 1280px) {
+    .My_Badges {
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Badges-Button {
+        padding: 8px;
+    }
+
+    .Badges-Button img {
+        width: 14px;
+    }
+}

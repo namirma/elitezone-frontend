@@ -1,0 +1,29 @@
+.profilebutton-menu {
+    position: absolute;
+    top: 85px;
+    width: 283px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--Box-Shadow);
+    height: auto;
+    animation: popupAnimation1 0.2s ease;
+}
+
+@keyframes popupAnimation1 {
+    0% {
+        transform: scaleY(.5)
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@media (max-width: 700px) {
+    .profilebutton-menu {
+        top: 85px;
+        width: 240px;
+    }
+}

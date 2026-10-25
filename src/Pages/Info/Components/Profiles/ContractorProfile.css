@@ -1,0 +1,17 @@
+.pey-prof-container {
+    margin: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 96px 0;
+}
+
+
+.pey-prof {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 48px 40px;
+    background-color: white;
+}

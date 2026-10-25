@@ -1,0 +1,61 @@
+.Terms_Container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 32px auto;
+    box-sizing: border-box;
+}
+
+.Terms_Img {
+    direction: rtl;
+    padding-bottom: 32px;
+}
+
+.Terms_Img img {
+    max-width: 100%;
+}
+
+.Terms_Title {
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 20px;
+    color: var(--Primary-EZ);
+    padding-bottom: 16px;
+}
+
+.Terms_Body {
+    direction: rtl;
+    padding-bottom: 32px;
+}
+
+.Terms_Body .Terms_Body_Text {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    margin-bottom: 24px;
+}
+
+.Terms_Body .Terms_Body_QuestionBox {
+    padding: 0 64px;
+}
+
+@media (max-width: 1600px) {
+    .Terms_Container {
+        padding: 0 64px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Terms_Body .Terms_Body_QuestionBox {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Terms_Container {
+        padding: 0 24px;
+    }
+
+    .Terms_Body .Terms_Body_QuestionBox {
+        padding: 0 16px;
+    }
+}

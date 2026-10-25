@@ -1,0 +1,89 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 32px 32px 32px;
+}
+
+.welcome-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-img img {
+    max-width: 800px;
+    width: 100%;
+}
+
+.welcome-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-text1 {
+    text-align: center;
+    font-family: 'YekanBakhFaNum-Bold';
+    color: var(--Text-EZ-01);
+    direction: rtl;
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.welcome-text2 {
+    direction: rtl;
+    text-align: center;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    color: var(--Text-EZ-01);
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.welcome-button {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.welcome-button span{
+    text-decoration: none;
+    font-family: 'YekanBakh-Regular';
+    font-size: 18px;
+    color: var(--Primary-EZ);
+    margin: 16px 0 64px 0;
+    cursor: pointer;
+}
+
+@media (max-width: 1600px) {
+    .welcome-text1 {
+        font-size: 24px;
+    }
+
+    .welcome-text2 {
+        font-size: 18px;
+    }
+    
+    .welcome-button a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .welcome-text1 {
+        font-size: 18px;
+    }
+
+    .welcome-text2 {
+        font-size: 16px;
+    }
+
+    .welcome-button a {
+        font-size: 16px;
+    }
+}
+

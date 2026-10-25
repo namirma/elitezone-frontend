@@ -1,0 +1,25 @@
+.University_Name {
+    display: flex;
+    flex-direction: column;
+}
+
+.University_Name-label {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 8px;
+}
+
+
+.University_Name-label label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+    text-align: end;
+}
+
+.University_Name-label span {
+    display: flex;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--SemanticColor-Error);
+}

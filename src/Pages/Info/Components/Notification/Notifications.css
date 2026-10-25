@@ -1,0 +1,153 @@
+.notif-container {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background-color: white;
+}
+
+.notif-section {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 16px;
+    text-align: center;
+    color: var(--Text-EZ-01);
+    padding-bottom: 16px;
+    justify-content: center;
+    position: relative;
+}
+
+.notif-section .notif-section-button {
+    border: none;
+    background-color: var(--Primary-EZ);
+    color: white;
+    padding: 8px;
+    font-family:  /* Iran */ 'YekanBakh-Bold';
+    font-size: 12px;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; 
+    cursor: pointer;
+}
+
+.notif-unread-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+}
+
+.notif-unread-item.last-item {
+    border-bottom: none;
+}
+
+.notif-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 16px;
+    color: var(--Text-EZ-01);
+    direction: rtl;
+}
+
+.notif-title span {
+    width: 12px;
+    height: 12px;
+    background-color: var(--CTA-EZ);
+    margin-left: 8px;
+    border-radius: 100%;
+}
+
+.notif-content {
+    direction: rtl;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding-top: 16px;
+    padding-right: 20px;
+}
+
+.notif-read-button {
+    align-self: flex-start;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+    background-color: white;
+    color: var(--Text-EZ-01);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .2));
+}
+
+.notif-read-button:hover {
+    background-color: var(--Primary-EZ);
+    color: white;
+}
+
+.notif-read-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--Tint-Primary-09);
+    padding: 24px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.notif-receiving-time {
+    direction: rtl;
+    align-self: flex-start;
+    display: flex;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 12px;
+    color: var(--Text-EZ-04);
+    
+    margin-top: 8px;
+}
+
+.notif-receiving-time_Time {
+    margin-right: 4px;
+    direction: ltr;
+}
+
+.NotifShowMoreButton {
+    background-color: transparent;
+    color: var(--Text-EZ-01);
+    opacity: .5;
+    font-family: 'YekanBakh-Bold';
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    font-size: 16px;
+}
+
+@media (max-width: 1280px) {
+    .notif-container {
+        padding-top: 16px;
+    }
+
+    .NotifShowMoreButton {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 700px) {
+    .notif-container {
+        padding: 16px 24px;
+        border-radius: 0px;
+    }
+
+}

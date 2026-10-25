@@ -1,0 +1,23 @@
+<svg id="T_C" data-name="T&amp;C" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45.505" height="57.374" viewBox="0 0 45.505 57.374">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.128" y1="0.776" x2="-0.128" y2="0.032" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d22c4e"/>
+      <stop offset="0.42" stop-color="#ee384e"/>
+      <stop offset="1" stop-color="#ef5662"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_1" data-name="Path 1" d="M5.33,9.291A3.976,3.976,0,0,1,9.291,5.33H40.939A3.961,3.961,0,0,1,44.9,9.291V52.808a3.947,3.947,0,0,1-3.961,3.961H9.291A3.961,3.961,0,0,1,5.33,52.808Z" transform="translate(-5.33 -5.33)" fill="#0854ab" fill-rule="evenodd"/>
+  <rect id="Rectangle_2" data-name="Rectangle 2" width="27.7" height="3.961" transform="translate(2.522 13.843)" fill="#fff"/>
+  <rect id="Rectangle_3" data-name="Rectangle 3" width="27.7" height="3.961" transform="translate(2.522 21.766)" fill="#fff"/>
+  <rect id="Rectangle_4" data-name="Rectangle 4" width="27.7" height="3.961" transform="translate(2.522 29.674)" fill="#fff"/>
+  <rect id="Rectangle_5" data-name="Rectangle 5" width="27.7" height="3.961" transform="translate(2.522 37.582)" fill="#fff"/>
+  <rect id="Rectangle_6" data-name="Rectangle 6" width="11.87" height="3.961" transform="translate(2.522 45.505)" fill="#fff"/>
+  <g id="Group_1" data-name="Group 1" transform="translate(5.935 5.935)">
+    <path id="Path_2" data-name="Path 2" d="M9.33,13.291A3.976,3.976,0,0,1,13.291,9.33H44.939A3.961,3.961,0,0,1,48.9,13.291V56.808a3.947,3.947,0,0,1-3.961,3.961H13.291A3.961,3.961,0,0,1,9.33,56.808Z" transform="translate(-9.33 -9.33)" fill-rule="evenodd" fill="url(#linear-gradient)"/>
+  </g>
+  <path id="Path_3" data-name="Path 3" d="M9.33,13.291A3.976,3.976,0,0,1,13.291,9.33H44.939A3.961,3.961,0,0,1,48.9,13.291V56.808a3.947,3.947,0,0,1-3.961,3.961H13.291A3.961,3.961,0,0,1,9.33,56.808Z" transform="translate(-3.395 -3.395)" fill="#0a69d6" fill-rule="evenodd"/>
+  <rect id="Rectangle_7" data-name="Rectangle 7" width="31.677" height="3.961" transform="translate(9.881 13.843)" fill="#fff"/>
+  <rect id="Rectangle_8" data-name="Rectangle 8" width="31.677" height="3.961" transform="translate(9.881 21.766)" fill="#fff"/>
+  <rect id="Rectangle_9" data-name="Rectangle 9" width="31.677" height="3.961" transform="translate(9.881 29.674)" fill="#fff"/>
+  <path id="Path_4" data-name="Path 4" d="M13.342,29.446,9.47,33.289l9.644,9.644L34.544,27.5,30.7,23.66,19.144,35.218Z" transform="translate(4.581 11.444)" fill="#fff"/>
+</svg>

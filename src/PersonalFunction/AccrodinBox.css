@@ -1,0 +1,60 @@
+.Accordin_Container {
+    box-sizing: border-box;
+    padding: 16px;
+    border: 1px solid var(--Divider-Background-Color);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.Accordin_Container.active {
+    border: 1px solid var(--Primary-EZ);
+    transition: border 0.2s ease-in-out;
+}
+
+.Accordin_Question {
+    direction: rtl;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'YekanBakhFaNum-semiBold';
+    color: var(--Text-EZ-01);
+    font-size: 14px;
+}
+
+.Accordin_Question.active {
+    color: var(--Primary-EZ);
+    transition: color 0.2s ease-in-out;
+}
+
+.Accordin_Question img {
+    margin-right: 8px;
+    width: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Accordin_Answer {
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    color: var(--Text-EZ-01);
+    font-size: 14px;
+    overflow: hidden;
+    padding-top: 8px;
+    cursor: default;
+}
+
+@media (max-width: 1280px) {
+    .Accordin_Question {
+        font-size: 14px;
+    }
+    .Accordin_Answer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Accordin_Question img {
+        width: 8px;
+    }
+}

@@ -1,0 +1,31 @@
+.sqfa-review-container {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+
+.sqfa-review {
+    display: flex;
+    flex-direction: row;
+    font-family: 'YekanBakhFaNum-semiBold';
+    color: var(--Text-EZ-01);
+    font-size: 16px;
+    margin-top: 24px;
+}
+.sqfa-review > span:nth-child(3) {
+    font-family: 'YekanBakhFaNum-regular';
+    font-size: 16px;
+    margin-right: 8px;
+    color: var(--Primary-EZ);
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.sqfa-review-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px
+}
+

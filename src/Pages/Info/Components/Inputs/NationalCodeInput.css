@@ -1,0 +1,43 @@
+.codemeliinput{
+    display: flex;
+    flex-direction: column;
+}
+
+.codemeliinput label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px;
+}
+.codemeliinput label img {
+    padding-bottom: 4px;
+}
+
+.without-userid-code {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.without-userid-code label {
+    padding-bottom: 0;
+    padding-right: 9px;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 13px;
+    color: var(--Text-EZ-01)
+}
+
+.without-userid-code input{
+    margin: 0;
+}
+
+.EmptyCodeMeli {
+    color: red;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 14px;
+    text-align: end;
+    padding-top: 10px;
+}

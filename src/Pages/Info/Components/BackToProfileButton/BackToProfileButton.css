@@ -1,0 +1,27 @@
+.BackToProfile {
+    /* Dont Show For 1280 Higher */
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    height: 48px;
+    text-decoration: none;
+}
+
+.BackToProfile div:nth-child(1) {
+    font-family: 'YekanBakhFaNum-Bold';
+    color: var(--Text-EZ-01);
+}
+
+.BackToProfile div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+@media (max-width: 1280px) {
+
+    .BackToProfile {
+        display: flex;
+    }
+
+}

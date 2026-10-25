@@ -1,0 +1,61 @@
+.abtus-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1320px;
+}
+
+.abtus-text div:nth-child(1) {
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 32px;
+    margin: 48px 0 32px 0;
+    color: #444444;
+    direction: rtl;
+}
+
+.abtus-text div:nth-child(2) {
+    direction: rtl;
+    text-align:justify;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 18px;
+    margin-bottom: 32px;
+    color: #444444;
+}
+
+.abtus-text div:nth-child(3) {
+    direction: rtl;
+    text-align:justify;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 16px;
+    opacity: .5;
+    margin-bottom: 32px;
+    color: #444444;
+}
+
+@media (max-width: 1600px) {
+    .abtus-text {
+        padding: 0 64px;
+        box-sizing: border-box;
+    }
+
+    .abtus-text div:nth-child(1) {
+        font-size: 20px;
+    }
+
+    .abtus-text div:nth-child(2)  {
+        font-size: 16px;
+    }
+
+    .abtus-text div:nth-child(3) {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .abtus-text {
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+}

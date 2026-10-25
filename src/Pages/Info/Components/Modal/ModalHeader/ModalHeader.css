@@ -1,0 +1,40 @@
+.Modal_Header {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 48px 32px 0 32px;
+}
+
+.Modal_Header span {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Modal_Header span div {
+    font-family: 'YekanBakhFaNum-semiBold';
+    font-size: 16px;
+    color: var(--Text-EZ-01);
+}
+
+.Modal_Header span img {
+    cursor: pointer;
+}
+
+.Modal_Header .divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Tint-Primary-05);
+    margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+    .Modal_Header span div {
+        font-size: 14px;
+    }
+}

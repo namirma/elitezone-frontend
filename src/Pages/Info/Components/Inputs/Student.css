@@ -1,0 +1,15 @@
+.student-contractor-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-top: 16px;
+}
+
+.student-contractor-text {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+    padding-left: 16px;
+    direction: rtl;
+}
+

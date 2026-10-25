@@ -1,0 +1,86 @@
+.sup-prof-container {
+    margin: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 96px 0;
+
+}
+
+.ProfessioanlProfile-wrapper {
+    max-width: 430px;
+    width: 100%;
+}
+
+.sup-prof {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 48px 40px;
+    background-color: white;
+}
+
+.foa-menu-container {
+    margin: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 94px 0;
+    width: 100%;
+}
+
+.foa-menu {
+    width: 90%;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 64px;
+    background-color: white;
+    border-radius: 8px;
+    clip-path: polygon(
+            /* Top left */
+            var(--edge-size) 0,
+            /* Top Right 1 */
+            calc(100% - var(--edge-size)) 0,
+            /* Top Right 2 */
+            100% var(--edge-size),
+            /* Buttom Right 1 */
+            100% calc(100% - var(--edge-size)),
+            /* Buttom Right 2 */
+            calc(100% - var(--edge-size)) 100%,
+            /*Buttom Left 1 */
+            var(--edge-size) 100%,
+            /* Buttom Left 2*/
+            0 calc(100% - var(--edge-size)),
+            /* Top Left 2 */
+            0 var(--edge-size));
+}
+
+
+.foa-menu-entered {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 8px 4px 22px;
+}
+
+
+.foa-menu-entered-item1 {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family:
+        /* Iran */
+        'YekanBakh-Light';
+    font-size: 12px;
+    align-items: center;
+}
+
+.foa-menu-entered-item1 span:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.foa-menu-entered-item1 span:nth-child(2) {
+    text-align: right;
+    padding: 0 8px;
+}

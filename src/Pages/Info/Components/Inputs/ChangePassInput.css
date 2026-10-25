@@ -1,0 +1,237 @@
+.currentpassinput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.currentpassinput label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px !important;
+}
+
+.currentpassinput-button {
+    align-self: flex-end;
+}
+.currentpassinput-button button {
+    background: none;
+    border: none;
+    width: fit-content;
+    font-family:  /* Iran */ 'YekanBakh-Thin';
+    font-size: 13px;
+    padding-top: 5px;
+    color: var(--Primary-EZ);
+    cursor: pointer;
+}
+
+.changepassinput-text1 {
+    display: flex;
+    justify-content: flex-end;
+    font-family:  /* Iran */ 'YekanBakh-Thin';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    margin-right: 17px ;
+    margin-bottom: 8px;
+}
+
+.changepassinput-newpass1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.changepassinput-newpass1 label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px !important;
+}
+
+
+/* Text for Progress bar that include ضعیف - متوسط - عالی شد */
+.changepassinput-state-text{
+    display: flex;
+    justify-content: flex-end;
+}
+.changepassinput-state-text p {
+    margin: 0;
+    padding-bottom: 12px;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 13px;
+}
+
+/* Progress bar with 3 color for check strong pass */
+/* Primary */
+.changepassinput-check-strong {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.changepassinput-check-strong span {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(10, 105, 214, .2);
+    border-radius: 8px;
+}
+
+.changepassinput-check-strong span:nth-child(2) {
+    margin: 0 9px;
+}
+
+.changepassinput-check-strong-hidden {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    display: none;
+}
+
+
+/* Red */
+.changepassinput-check-strong-red {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.changepassinput-check-strong-red span {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(10, 105, 214, .2);
+    border-radius: 8px;
+}
+
+.changepassinput-check-strong-red span:nth-child(1) {
+    background-color: var(--SemanticColor-Error);
+
+}
+
+.changepassinput-check-strong-red span:nth-child(2) {
+    margin: 0 9px;
+}
+
+.changepassinput-check-strong-red-hidden {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    display: none;
+}
+
+
+/* Orange */
+.changepassinput-check-strong-orange {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.changepassinput-check-strong-orange span {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(10, 105, 214, .2);
+    border-radius: 8px;
+}
+
+.changepassinput-check-strong-orange span:nth-child(1) {
+    background-color: var(--SemanticColor-Warning);
+}
+
+.changepassinput-check-strong-orange span:nth-child(2) {
+    background-color: var(--SemanticColor-Warning);
+    margin: 0 9px;
+}
+
+.changepassinput-check-strong-orange-hidden {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    display: none;
+}
+
+/* Green */
+.changepassinput-check-strong-green {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.changepassinput-check-strong-green span {
+    width: 100%;
+    height: 5px;
+    background-color: rgba(10, 105, 214, .2);
+    border-radius: 8px;
+}
+
+.changepassinput-check-strong-green span:nth-child(1) {
+    background-color: var(--SemanticColor-Success);
+}
+
+.changepassinput-check-strong-green span:nth-child(2) {
+    background-color: var(--SemanticColor-Success);
+    margin: 0 9px;
+}
+
+.changepassinput-check-strong-green span:nth-child(3) {
+    background-color: var(--SemanticColor-Success);
+}
+
+.changepassinput-check-strong-green-hidden {
+    padding: 0 0 20px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    display: none;
+}
+
+
+.changepassinput-check-terms {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.changepassinput-check-terms > span {
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    margin: 0;
+    font-family: 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--Text-EZ-01);
+}
+
+.changepassinput-check-terms > span > img {
+    padding-left: 6px;
+    opacity: .8;
+}
+
+.changepassinput-newpass2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.changepassinput-newpass2 label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px !important;
+}
+
+
+

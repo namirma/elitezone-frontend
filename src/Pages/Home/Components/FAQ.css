@@ -1,0 +1,122 @@
+.faq-container {
+    max-width: 1320px;
+    margin: 64px auto 0 auto;
+}
+
+
+.faq-content-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 32px 48px;
+}
+
+.faq-content-wrapper {
+    padding: 0;
+}
+
+.faq-title {
+    text-align: center;
+}
+
+.faq-title div:nth-child(1) {
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 24px;
+    color: var(--Primary-EZ)
+}
+
+.faq-title div:nth-child(2) {
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 18px;
+    color: var(--Text-EZ-01);
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+
+.foa_ContactUs_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding-bottom: 24px;
+}
+
+.foa_ContactUs_container>span {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.foa_ContactUs_rightside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.foa_ContactUs_leftside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+}
+
+.foa_ContactUs_rightside > div,
+ .foa_ContactUs_leftside > div {
+    margin-top: 20px;
+}
+
+.foa_ContactUs_Message {
+    margin-top: 20px;
+}
+
+.foa-button {
+    width: fit-content;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .faq-content-container {
+        padding: 0 0 24px 0;
+    }
+
+    .faq-content-wrapper {
+        padding: 32px 24px;
+    }
+
+    .foa_ContactUs_container {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .foa_ContactUs_container>span {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foa_ContactUs_rightside {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0;
+        padding: 0 24px;
+    }
+
+    .foa_ContactUs_leftside {
+        max-width: 100%;
+        width: auto;
+        margin-right: 0;
+        padding: 0 24px;
+    }
+
+    .foa_ContactUs_Message {
+        padding: 0 24px;
+    }
+
+    .foa-button {
+        width: 100%;
+    }
+
+}

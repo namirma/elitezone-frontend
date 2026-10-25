@@ -1,0 +1,230 @@
+.ds {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 24px;
+}
+
+.ds-label {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    padding-bottom: 8px;
+    text-align: right;
+}
+
+.ds-label div:nth-child(1) {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+}
+
+.dsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    direction: rtl;
+}
+
+.dsContainer_Part {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dsContainer .dsContainer_Part:first-child {
+    margin-left: 16px;
+    box-sizing: border-box;
+
+}
+.dsContainer .dsContainer_Part:last-child {
+    margin-right: 16px;
+    box-sizing: border-box;
+}
+
+.ds_item1 {
+    direction: rtl;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    text-align: end;
+}
+
+.ds_item1 label {
+    width: max-content;    
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+}
+
+.ds_item1 span {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--SemanticColor-Error);
+}
+
+.ds-item2-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+/* Multi Select Item2 Container active */
+.ds-item2-container-active {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--Primary-EZ);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+@media (max-width:700px) {
+    .ds {
+        padding-bottom: 0px !important;
+    }
+    
+    .dsContainer {
+        flex-direction: column;
+    }
+
+    .dsContainer .dsContainer_Part:first-child {
+        margin-left: 0px;
+    }
+    .dsContainer .dsContainer_Part:last-child {
+        margin-right: 0px;
+    }
+
+    .ds_item1 {
+        height: auto;
+        padding-left: 0px;
+        padding-bottom: 8px;
+    }
+
+    .dsContainer_Part {
+        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .dsContainer .dsContainer_Part {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Multi Select Item2 No active */
+.ds-item2 {
+    width: 100%;
+    height: 53px;
+    border: 1px solid var(--Input-Border);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: end;
+}
+
+.ds-item2 .ds-item2-img {
+    display: flex;
+    align-items: center;
+}
+
+.ds-item2 .ds-item2-img-hover {
+    display: none;
+    align-items: center;
+}
+
+.ds-item2:hover .ds-item2-img {
+    display: none;
+    align-items: center;
+}
+
+.ds-item2:hover .ds-item2-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+/* Multi Select Item2 Active */
+.ds-item2-active {
+    width: 100%;
+    height: 53px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: end;
+}
+.ds-item2-text {
+    font-family: 'YekanBakhFaNum-Light';
+    font-size: 12px;
+    color: var(--PlaceHolder)
+}
+.ds-item2-active .ds-item2-img {
+    display: none;
+    align-items: center;
+}
+.ds-item2-active .ds-item2-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+
+.ds-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Divider-Background-Color);
+}
+.ds-item2-list {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow-y: scroll;
+    cursor: pointer;
+    direction: rtl;
+}
+
+/* if Needed Custom Scrollbar put here */
+
+.ds-item2-list-items-container{
+    width: 100%;
+}
+.ds-item2-list-items {
+    display: flex;
+    align-items: flex-end;
+    font-family:  /* Iran */ 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+    cursor: pointer;
+}
+.ds-item2-list-items:hover {
+    background-color: var(--Hover-On-Items);
+}
+
+.ShowDesginAndSupervisionError {
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    padding-top: 8px;
+    color: var(--SemanticColor-Error);
+}
+.hiddenDesginAndSupervisionError {
+    display: none;
+}

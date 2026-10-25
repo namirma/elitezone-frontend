@@ -1,0 +1,78 @@
+.code-entred-wrong-hidden {
+    display: none;
+}
+
+.code-entred-wrong {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    background-color: var(--Text-EZ-01);
+    color: white;
+    width: 317px;
+    --edge-size-2: 20px;
+}
+
+.code-entred-wrong p {
+    margin: 0;
+    text-align: end;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    padding: 20px;
+}
+
+.smscode-container {
+    margin: 0px;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smscode-style {
+    width: 430px;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: auto;
+    margin: 24px 0;
+}
+
+.smscode-header {
+    text-align: right;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 20px;
+    color: var(--Text-EZ-01);
+}
+
+.smscode-content {
+    text-align: justify;
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding-top: 24px;
+    line-height: 2;
+}
+
+.login-with-password {
+    padding-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.login-with-password button {
+    border: none;
+    background: none;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: #00AD9A;
+    cursor: pointer;
+    padding-right: 1px;
+}
+
+.smscode-button {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}

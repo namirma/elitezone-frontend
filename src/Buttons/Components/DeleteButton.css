@@ -1,0 +1,14 @@
+.DeleteButton_Container {
+    display: flex;
+    direction: rtl;
+    align-items: center;
+}
+
+
+.DeleteButton_Container > div {
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color: var(--SemanticColor-Error);
+    padding-right: 8px;
+    cursor: pointer;
+}

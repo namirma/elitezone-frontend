@@ -1,0 +1,45 @@
+.website-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.website-address-label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color : var(--Text-EZ-01);
+    padding-bottom: 8px;
+}
+
+.website-address-input {
+    width: 100%;
+}
+
+.website-address-error {
+    padding-top: 8px;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color : var(--SemanticColor-Error);
+}
+
+.disable-website-address {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 8px;
+}
+
+.disable-website-address label {
+    padding: 0;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--Disable-Button-Text03);
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+.disable-website-address input[type="checkbox"] {
+    padding: 0;
+    margin: 0;
+}

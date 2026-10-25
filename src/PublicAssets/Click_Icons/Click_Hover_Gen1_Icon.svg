@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <filter id="Radio_Button" x="0" y="0" width="28" height="28" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#024376" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_14397" data-name="Group 14397" transform="translate(-853 -361)">
+    <g id="Disclosure_Button" data-name="Disclosure Button" transform="translate(856 364)">
+      <g transform="matrix(1, 0, 0, 1, -3, -3)" filter="url(#Radio_Button)">
+        <rect id="Radio_Button-2" data-name="Radio Button" width="22" height="22" rx="3" transform="translate(3 3)" fill="#024376"/>
+      </g>
+    </g>
+    <g id="ads_click_black_24dp_1_" data-name="ads_click_black_24dp (1)" transform="translate(858 366)">
+      <path id="Path_36107" data-name="Path 36107" d="M8.177,12.172a3.816,3.816,0,1,1,4-4l-1.336-.4a2.544,2.544,0,1,0-3.06,3.06Zm6.546-3.811c0,.191-.006.382-.025.573l-1.253-.375c.006-.064.006-.134.006-.2a5.089,5.089,0,1,0-5.089,5.089c.064,0,.134,0,.2-.006L8.934,14.7c-.191.019-.382.025-.573.025a6.362,6.362,0,1,1,6.362-6.362Zm-2.4,2.71,2.4-.8L8.362,8.362l1.908,6.362.8-2.4,2.716,2.716,1.26-1.26Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

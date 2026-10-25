@@ -1,0 +1,74 @@
+.jobinfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+.jobinfo-description {
+    padding: 32px;
+    padding-bottom: 0;
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 16px;
+    color: var(--Text-EZ-01);
+}
+
+.jobinfo-button {
+    padding: 32px;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+}
+
+.jobinfo-button div {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    margin: 0;
+    width: 100%;
+}
+
+.jobinfo-button div img {
+    width: 24px
+}
+
+.jobinfo-button div:nth-child(2) {
+    justify-content: flex-end;
+}
+
+
+.jobinfo-button div button {
+    border: none;
+    background: none;
+    padding: 0;
+    clip-path: none;
+    font-family: 'YekanBakhFaNum-semiBold';
+    font-size: 16px;
+    color: var(--SemanticColor-Success);
+    cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+    .jobinfo-description {
+        padding-top: 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .jobinfo {
+        border-radius: 0;
+    }
+
+    .jobinfo-button  {
+        flex-direction: column;
+    }
+
+    .jobinfo-button div:nth-child(2) {
+        margin-top: 24px;
+        justify-content: flex-start;
+    }
+}

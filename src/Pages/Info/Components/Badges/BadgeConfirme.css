@@ -1,0 +1,8 @@
+.badgeconfirme {
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 12px !important;
+    color: white !important;
+    padding: 2px 8px;
+    border-radius: var(--Large-Radius);
+    margin-right: 8px;
+}

@@ -1,0 +1,22 @@
+.emailinput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.emailinput label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px;
+}
+
+.EmptyEmail, .UnSupportFormat {
+    color: red;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 14px;
+    text-align: end;
+    padding-top: 10px;
+}

@@ -1,0 +1,170 @@
+.MembProvinces {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+/* Label */
+.Provinces-lable {
+    display: flex;
+    flex-direction: row-reverse;
+    /* This Font Apply For Red Star */
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    padding-bottom: 8px;
+    text-align: right;
+}
+
+.Provinces-lable label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+}
+
+/* Container for Multi Select Shape and List of Works */
+.Provinces-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid var(--Input-Border);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.Province-container-active {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid var(--Primary-EZ);
+    border-radius: 8px;
+}
+
+/* Multi Select No Active*/
+.Province-Box {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.Province-Box-Placeholder {
+    font-family:  /* Iran */ 'YekanBakh-Light' !important;
+    font-size: 14px;
+    color: var(--PlaceHolder);
+}
+
+.Province-Box-Value {
+    font-family:  /* Iran */ 'YekanBakhFaNum-regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+}
+
+.Province-Box .Province-Box-img {
+    display: flex;
+    align-items: center;
+}
+
+.Province-Box .Province-Box-img-hover {
+    display: none;
+    align-items: center;
+}
+
+.Province-Box:hover .Province-Box-img {
+    display: none;
+    align-items: center;
+}
+
+.Province-Box:hover .Province-Box-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+/* Multi Select Active */
+.Province-Box-Active {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.Province-Box-Content {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--PlaceHolder);
+}
+
+.Province-Box-Active .Province-Box-img {
+    display: none;
+    align-items: center;
+}
+
+.Province-Box-Active .Province-Box-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Divder Between Multi Select And List */
+.Provinces-List-Divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Divider-Background-Color);
+}
+
+/* List of Works */
+.Province-List {
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 8px 8px;
+    overflow-y: scroll;
+    direction: rtl;
+
+}
+
+/* if Needed Custom Scrollbar put here */
+
+.Province-List-Items-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Province-List-Items {
+    direction: ltr;
+    text-align: end;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+    cursor: pointer;
+}
+
+.Province-List-Items:hover {
+    background-color: var(--Hover-On-Items);
+}

@@ -1,0 +1,170 @@
+.Fields_Of_Study {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 24px;
+}
+
+/* Label */
+.Fields_Of_Study-label {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    padding-bottom: 8px;
+}
+
+.Fields_Of_Study-label label {
+    font-family: var(--Title-Font);
+    font-size: var(--Title-Font-Size);
+    color: var(--Text-EZ-01);
+}
+
+.Fields_Of_Study-label span {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color:var(--SemanticColor-Error);
+}
+
+/* Container for Multi Select Shape and List of Works */
+.Fields_Of_Study-container {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+.Fields_Of_Study-container-active {
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border: 1px solid var(--Primary-EZ);
+    border-radius: 8px;
+}
+
+/* Multi Select No Active*/
+.multiselect-Fields_Of_Study {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+    border: 1px solid var(--Input-Border);
+    cursor: pointer;
+}
+
+.multiselect-Fields_Of_Study-content-placeholder {
+    font-family:  /* Iran */ 'YekanBakh-Light' !important;
+    font-size: 14px;
+    color: var(--PlaceHolder);
+}
+
+.multiselect-Fields_Of_Study-content-item {
+    font-family:  /* Iran */ 'YekanBakhFaNum-regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+}
+.multiselect-Fields_Of_Study .multiselect-Fields_Of_Study-img {
+    display: flex;
+    align-items: center;
+}
+
+.multiselect-Fields_Of_Study .multiselect-Fields_Of_Study-img-hover {
+    display: none;
+    align-items: center;
+}
+
+.multiselect-Fields_Of_Study:hover .multiselect-Fields_Of_Study-img {
+    display: none;
+    align-items: center;
+}
+
+.multiselect-Fields_Of_Study:hover .multiselect-Fields_Of_Study-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+/* Multi Select Active */
+.multiselect-Fields_Of_Study-active {
+    text-align: end;
+    width: 100%;
+    height: 53px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px 0 16px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.multiselect-Fields_Of_Study-content {
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 12px;
+    color: var(--PlaceHolder);
+}
+.multiselect-Fields_Of_Study-active .multiselect-Fields_Of_Study-img {
+    display: none;
+    align-items: center;
+}
+
+.multiselect-Fields_Of_Study-active .multiselect-Fields_Of_Study-img-hover {
+    display: flex;
+    align-items: center;
+}
+
+/* Divder Between Multi Select And List */
+.Fields_Of_Study-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Divider-Background-Color);
+}
+
+/* List of Works */
+.list-Fields_Of_Study {
+    width: 100%;
+    height: 100px;
+    border-radius: 0 0 8px 8px;
+    overflow-y: scroll;
+    direction: rtl;
+    
+}
+
+/* if Needed Custom Scrollbar put here */
+
+.list-Fields_Of_Study-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.list-Fields_Of_Study-items-container div:nth-child(7){
+    border-bottom: none;
+}
+.list-Fields_Of_Study-items {
+    direction: ltr;
+    text-align: end ;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:  /* Iran */ 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    padding: 8px 16px 8px 0;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+    cursor: pointer;
+}
+.list-Fields_Of_Study-items:hover {
+    background-color: var(--Hover-On-Items);
+}

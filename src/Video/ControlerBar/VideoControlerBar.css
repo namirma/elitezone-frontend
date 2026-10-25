@@ -1,0 +1,162 @@
+.custom-controls-container {
+    direction: ltr;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+}
+
+.box-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative
+}
+
+.box-control-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+
+.quality-selector select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(10, 105, 214, 0.4);
+    background-color: white;
+    color: rgba(10, 105, 214, 0.4);
+    border-radius: 8px;
+    padding: 4px 1px;
+    outline: none;
+    box-shadow: none;
+    margin-right: 10px;
+}
+
+.quality-selector option {
+    background-color: white;
+    color: rgba(10, 105, 214, 0.4);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    box-shadow: none;
+}
+
+.box-control-left {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+}
+
+.play-pause-btn img,
+.rewind-btn img,
+.forward-btn img,
+.fullscreen-btn img,
+.mute-btn img {
+    display: flex;
+    cursor: pointer;
+    height: 32px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    color: var(--Text-EZ-01);
+    font-size: 14px;
+    font-family: 'YekanBakhFaNum-Light';
+}
+
+.time-display>span {
+    margin: 0 4px;
+}
+
+.time-display div {
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-Container {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    margin: 16px 0 12px 0;
+    border-radius: 8px;
+    outline: none;
+}
+
+.progress-bar-background {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.progress-bar-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.progress-bar-slider::-webkit-slider-thumb {
+    --webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--Primary-EZ);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--Primary-EZ);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar-slider::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--Primary-EZ);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1280px) {
+    .time-display {
+        font-size: 12px;
+    }
+
+    .play-pause-btn img,
+    .rewind-btn img,
+    .forward-btn img,
+    .fullscreen-btn img,
+    .mute-btn img {
+        display: flex;
+        cursor: pointer;
+        height: 24px;
+    }
+}

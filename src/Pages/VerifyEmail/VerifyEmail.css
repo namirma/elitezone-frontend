@@ -1,0 +1,44 @@
+.verifyEmail_Container {
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 430px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: var(--Medium-Radius);
+    padding: 32px 48px;
+}
+
+.verifyEmail_Container > .text {
+    font-family: 'YekanBakh-semiBold';
+    color: var(--Text-EZ-01);
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.verifyEmail_Container > .back {
+    color: var(--Primary-EZ);
+    cursor: pointer;
+    font-family: 'YekanBakh-regular';
+    font-size: 14px;
+}
+
+@media (max-width: 1600px) {
+    .verifyEmail_Container {
+        margin: 64px auto 0 auto;
+        padding: 32px 64px;
+    }
+}
+
+@media (max-width: 700px) {
+    .verifyEmail_Container {
+        padding: 32px 24px;
+    }
+
+    .verifyEmail_Container > .text {
+        font-size: 16px;
+    }
+}

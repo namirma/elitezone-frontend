@@ -1,0 +1,16 @@
+.Customized_Input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.Customized_Input img {
+    display: block;
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 16px;
+    transform: translate(0%, -50%);
+    cursor: pointer;
+}

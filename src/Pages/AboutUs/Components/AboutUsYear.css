@@ -1,0 +1,62 @@
+.abtusyear-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.abtusyear-line {
+    width: 2px;
+    height: 120px;
+    background-color: #444444;
+    margin-top: 16px;
+}
+
+.abtusyear-year-solar {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #FFC113;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 24px;
+    color: white;
+}
+
+.abtusyear-year-ad {
+    direction: ltr;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 16px;
+    color: #444444;
+    margin-top: 8px;
+}
+
+.abtusyear-year-img {
+    display: flex;
+    transform: rotate(-90deg);
+    margin-top: 16px;
+}
+
+.abtusyear-year-img img {
+    width: 8px;
+    transform-origin: top;
+    transform: scaleY(1);
+    animation-name: slideDown;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slideDown {
+
+    0% {
+        transform: translate(0, 0px)
+    }
+
+    50% {
+        transform: translate(8px, 0px)
+    }
+
+}

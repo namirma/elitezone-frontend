@@ -1,0 +1,35 @@
+.profilebutton-profile-container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    height: 85px;
+}
+
+.profilebutton-img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilebutton-img img:nth-child(1) {
+    width: 32px;
+}
+
+.profilebutton-img img:nth-child(2) {
+    max-height: 70px;
+}
+
+@media (max-width: 1024px) {
+    .profilebutton-profile-container {
+        height: 65px;
+    }
+
+    .profilebutton-img img:nth-child(1) {
+        width: 24px;
+    }
+
+    .profilebutton-img img:nth-child(2) {
+        max-width: 60px;
+    }
+
+}

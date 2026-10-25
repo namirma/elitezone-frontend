@@ -1,0 +1,31 @@
+.hmg-menu-container {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: var(--Primary-EZ);
+    opacity: 1;
+    color: #fafafa;
+    transition: height 0.3s ease;
+    z-index: -1;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.hmg-menu-container.open {
+    height: 100%;
+}
+
+.hmg-menu-list { 
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    text-align: right;
+    padding: 24px 0 100px 0;
+}
+@media (max-width: 1024px) {
+    .hmg-menu-container {
+        top: 64px;
+    }
+}

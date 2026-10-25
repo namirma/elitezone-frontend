@@ -1,0 +1,222 @@
+.registerPage-container {
+    max-width: 1920px;
+    min-height: 100vh;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+
+.regiterPage-img {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.registerPage-text p {
+    display: flex;
+    justify-content: center;
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 20px;
+    color: var(--Text-EZ-01);
+    padding-top: 56px;
+    margin: 0;
+    text-align: center;
+}
+
+.role-items-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 48px;
+    direction: rtl;
+}
+
+.role-items-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    width: max-content;
+    position: absolute;
+    top: 0;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    visibility: hidden;
+    background-color: var(--Text-EZ-01);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    z-index: 1;
+    padding: 8px;
+    font-size: 12px;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+}
+
+.role-item-readmore {
+    cursor: pointer;
+    transition: .2s ease;
+    filter: grayscale(100%);
+    opacity: .5 ;
+    display: flex;
+    justify-content: center;
+    transform: scale(.95);
+}
+
+.role-item-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.role-item-img img {
+    cursor: pointer;
+    max-width: 400px;
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: .35;
+    /* filter: sepia(1) saturate(1000%) hue-rotate(190deg) brightness(1.2);
+    opacity: .2; */
+    transform: scale(.95)
+}
+
+.current-role {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--Text-EZ-01);
+    text-align: right;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'YekanBakhFaNum-Bold';
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.19);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #ffffff4d;
+}
+
+.current-role2 {
+    padding: 2px 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background: rgba(10, 105, 214, 1);
+    border-radius: 8px;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #ffffff4d;
+    color: white;
+}
+
+.role-item-checkbox {
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    height: fit-content;
+}
+
+.role-item-checkbox span {
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 20px;
+    color: var(--Text-EZ-01);
+    padding-right: 16px;
+}
+
+.role-item-checkbox input {
+    margin: 0;
+    height: 24px;
+    width: 24px;
+}
+
+.role-item-button {
+    width: 100%;
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.role-item-button span {
+    width: max-content;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1920px) {
+    .registerPage-container {
+        height: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .role-items-container {
+        grid-template-columns: 50% 50%;
+    }
+
+    .role-item-button {
+        margin-bottom: 48px;
+    }
+
+    .role-item {
+        padding-bottom: 24px;
+    }
+
+    .registerPage-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .role-items-container {
+        grid-template-columns: 100%;
+    }
+
+    .role-item-button span {
+        width: 100%;
+    }
+}
+
+/* Hover styles only for devices that support hover and have a fine pointer */
+
+@media (min-width: 1280px) and (hover: hover) and (pointer: fine){
+    .tooltip:hover .tooltiptext {
+        transition: .2s ease;
+        visibility: visible;
+    }
+
+    .role-item-readmore:hover {
+        transition: .1s ease;
+        opacity: 1;
+        filter: none;
+        transform: scale(1);
+    }
+
+    .role-item-img:hover img {
+        filter: none;
+        opacity: 1;
+        transition: .2s ease-in-out;
+        transform: scale(1);
+    }
+}

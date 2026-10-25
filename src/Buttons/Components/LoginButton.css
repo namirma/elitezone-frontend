@@ -1,0 +1,109 @@
+.login-shadow {
+    width: 100%;
+    display: flex;
+    filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, .2));
+    will-change: auto;
+}
+
+@media (min-width: 1281px) {
+    .login-shadow:hover {
+        height: 53px;
+        display: flex;
+        filter: drop-shadow(var(--Button-Shadow-01));
+    }
+
+    .login-shadow:active {
+        height: 53px;
+        display: flex;
+        filter: drop-shadow(2px 2px 1px rgb(142, 7, 70));
+    }
+}
+
+.login {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 53px;
+    background-color: var(--CTA-EZ);
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: var(--Medium-Radius);
+}
+
+.login-text {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text-img {
+    display: inline-flex;
+    padding-left: 16px;
+}
+
+.login-text-img img {
+    width: 22px;
+}
+
+.login-text-content {
+    font-family: 'YekanBakhFaNum-Bold';
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.divider-login {
+    font-family:  /* Iran */ 'YekanBakh-Thin';
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 6px;
+}
+
+@media (max-width: 1280px) {
+
+    .login-text-content {
+        font-size: 16px;
+        padding: 0 16px 0 8px;
+        font-family: 'YekanBakhFaNum-bold';
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .login {
+        width: 180px;
+        height: 44px;
+    }
+}
+
+@media (max-width: 900px) {
+    .login {
+        max-width: 140px;
+        height: 44px;
+    }
+
+    .login-text-img {
+        display: none;
+    }
+
+    .login-text-content {
+        padding: 0;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .login {
+        width: 120px;
+        height: 40px;
+    }
+
+    .login-text-content {
+        font-size: 14px;
+        font-family: 'YekanBakhFaNum-bold';
+    }
+
+}

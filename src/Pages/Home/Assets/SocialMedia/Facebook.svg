@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #0080ff;
+      }
+
+      .cls-3 {
+        filter: url(#drop-shadow-3);
+      }
+    </style>
+    <filter id="drop-shadow-3" x="82.5319" y="82.3719" width="358.32" height="358.56" filterUnits="userSpaceOnUse">
+      <feOffset dx="5.6627" dy="5.6627"/>
+      <feGaussianBlur result="blur" stdDeviation="5.6627"/>
+      <feFlood flood-color="#000" flood-opacity=".44"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-3">
+    <path class="cls-2" d="M256,418.0886c89.5189,0,162.0886-72.5697,162.0886-162.0886s-72.5697-162.0886-162.0886-162.0886-162.0886,72.5697-162.0886,162.0886,72.5697,162.0886,162.0886,162.0886Z"/>
+  </g>
+  <path class="cls-1" d="M272.4209,232.228h31.5427l-4.4757,33.3759h-27.2696v84.616h-35.8767l.0537-84.6867h-29.578v-33.3051h29.6439v-23.4612c0-5.5268.2526-10.7291,1.7016-16.0693,1.8834-6.9057,5.1156-13.5484,10.0184-18.816,6.9923-7.5127,16.0418-10.4076,25.9742-11.5125,4.3115-.4759,8.2888-.7822,12.6058-.4484,6.1823.4759,12.3271,1.4441,18.4214,2.5319v27.954c-1.2897-.136-17.7869.1751-19.5318.6071-15.3433,3.8033-13.4325,20.1252-13.4325,33.4973v5.7172h.2026Z"/>
+</svg>

@@ -1,0 +1,67 @@
+.AnimateContent_Container {
+    display: grid;
+    /* gap: 16px; */
+    row-gap: 12px;
+    column-gap: 48px;
+    /* margin-top: 16px; */
+    overflow: hidden;
+    direction: rtl;
+}
+
+.AnimateContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 16px; */
+}
+
+.AnimateContent_Img img {
+    display: flex;
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.AnimateContent_Title {
+    font-family: 'YekanBakhFaNum-ExtraBold';
+    color: var(--Text-EZ-01);
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.AnimateContent_Description {
+    font-family: 'YekanBakhFaNum-regular';
+    color: var(--Text-EZ-01);
+    font-size: 14px;
+    text-align: justify;
+}
+
+@media (max-width: 1280px) {
+    .AnimateContent_Title {
+        font-size: 16px;
+    }
+
+    .AnimateContent_Description {
+        font-size: 14px;
+    }
+
+    .AnimateContent_Container {
+        gap: 32px;
+    }
+
+    .AnimateContent {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .AnimateContent_Container {
+        gap: 0px;
+    }
+
+    .AnimateContent {
+        padding-top: 24px;
+    }
+
+}

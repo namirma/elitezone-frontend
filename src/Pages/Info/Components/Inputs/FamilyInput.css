@@ -1,0 +1,24 @@
+.lastnameinput{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.lastnameinput label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px;
+}
+.lastnameinput label img {
+    padding-bottom: 4px;
+}
+
+.EmptyLastName, .DigitInLastName, .UnSupportFormat, .LastNameContainLatin {
+    color: red;
+    font-family:  /* Iran */ 'YekanBakh-Light';
+    font-size: 14px;
+    text-align: end;
+    padding-top: 10px;
+}

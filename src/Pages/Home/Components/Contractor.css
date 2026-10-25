@@ -1,0 +1,93 @@
+.Contractor-container {
+    max-width: 1320px;
+    margin: 64px auto 0 auto;
+}
+
+.Contractor-style {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    padding: 32px 0;
+}
+
+.Contractor-item1 {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 24px;
+}
+
+.Contractor-item1 img:nth-child(1) {
+    display: inline;
+}
+
+.Contractor-item1 img:nth-child(2) {
+    display: none;
+}
+
+.Contractor-item2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+}
+.Contractor-item2 h1 {
+    text-align: end;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 24px;
+    color: var(--Primary-EZ);
+    margin: 0;
+    border-bottom: 1px solid var(--Divider-Background-Color);
+
+}
+
+.Contractor-item2 .Contractor-item2-text {
+    padding-top: 16px;
+    padding-bottom: 24px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .Contractor-item2 h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Contractor-style {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 24px 0;
+        clip-path: none;
+    }
+
+    .Contractor-item1 {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .Contractor-item1 img:nth-child(1) {
+        display: none;
+    }
+
+    .Contractor-item1 img:nth-child(2) {
+        display: inline;
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .Contractor-item2 {
+        padding-left: 0;
+        margin-top: 16px;
+    }
+
+    .Contractor-item2 h1 {
+        text-align: center;
+    }
+
+    .Contractor-item2 .Contractor-item2-text {
+        padding: 16px 24px 24px 24px;
+    }
+}

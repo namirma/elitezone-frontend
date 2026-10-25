@@ -1,0 +1,15 @@
+.phoneinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.phoneinput label {
+    font-family:  /* Iran */ 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px;
+}
+.phoneinput label img {
+    padding-bottom: 4px;
+}

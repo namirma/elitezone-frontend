@@ -1,0 +1,91 @@
+.BI_description_Container {
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.BI_desc_Header {
+    font-family: 'YekanBakh-Bold';
+    font-size: 24px;
+    padding: 24px 24px 16px 16px;
+    color: var(--Primary-EZ);
+}
+
+.BI_desc_Explanation {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px;
+    box-sizing: border-box;
+    color: var(--Text-EZ-01);
+    font-family: 'YekanBakh-regular';
+}
+
+.BI_desc_Explanation_Text {
+    width: 100%;
+    align-self: flex-start;
+    text-align: justify;
+    line-height: 2.5;
+    color: var(--Text-EZ-01);
+}
+
+.BI_desc_Explanation .BI_desc_Explanation_Img {
+    margin-right: 48px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;   
+}
+
+.BI_desc_Explanation .BI_desc_Explanation_Img img {
+    max-width: 600px;
+    min-width: 400px;
+    width: 100%;
+    border-radius: var(--Medium-Radius);
+}
+
+@media (max-width: 1600px) {
+    .BI_desc_Explanation {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .BI_desc_Explanation {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .BI_desc_Header {
+        font-size: 16px;
+        padding: 16px 0 0 0;
+        text-align: center;
+    }
+
+    .BI_desc_Explanation_Text {
+        font-size: 14px;
+        text-align: justify;
+        align-self: center;
+        margin: 0;
+    }   
+
+    .BI_desc_Explanation .BI_desc_Explanation_Img {
+        margin-right: 0px;
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .BI_desc_Explanation .BI_desc_Explanation_Img img {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .BI_description_Container {
+        margin-bottom: 32px;
+    }
+}
+

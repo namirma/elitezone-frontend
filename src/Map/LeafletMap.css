@@ -1,0 +1,35 @@
+.leaflet-container {
+    height: 400px;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.map-popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    direction: rtl;
+    padding: 8px;
+}
+
+.map-popup-container .map-popup-header {
+    font-size: 14px;
+    font-family:  /* Iran */ 'YekanBakh-Bold';
+    color: var(--Text-EZ-01);
+}
+
+.map-popup-container .map-popup-body {
+    line-height: 18px;
+    padding: 8px 0;
+    text-align: right;
+    font-size: 10px;
+    font-family:  /* Iran */ 'YekanBakh-Bold';
+    color: var(--Text-EZ-01);
+} 
+
+.map-popup-container .map-popup-footer {
+    font-size: 12px;
+    font-family:  /* Iran */ 'YekanBakh-Bold';
+    color: var(--Text-EZ-01);
+    font-family:  /* Iran */ 'YekanBakhFaNum-Bold';
+}

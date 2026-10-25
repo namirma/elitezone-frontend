@@ -1,0 +1,33 @@
+.bi_textsection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    direction: rtl;
+}
+
+.bi_textsection div {
+    color: var(--Text-EZ-01);
+    text-align: right;
+}
+
+.bi_textsection > div:nth-child(1) {
+    font-size: 24px;
+    font-family: 'YekanBakhFaNum-semiBold';
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.bi_textsection > div:nth-child(2) {
+    font-size: 18px;
+    font-family: 'YekanBakhFaNum-regular';
+}
+
+@media (max-width: 1280px) {
+    .bi_textsection > div:nth-child(1) {
+        font-size: 18px;
+    }
+    .bi_textsection > div:nth-child(2) {
+        font-size: 14px;
+        font-family: 'YekanBakhFaNum-regular';
+    }
+}

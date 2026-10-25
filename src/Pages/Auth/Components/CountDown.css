@@ -1,0 +1,70 @@
+.resend-verification-code {
+    padding-top: 16px;
+    display: flex !important;
+    flex-direction: row-reverse;
+    justify-content: center !important;
+    height: 28px;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+}
+
+.resend-verification-code p {
+    width: fit-content;
+    margin: 0;
+    color: var(--Text-EZ-01);
+}
+
+.resend-verification-code .resend-verification-code-link {
+    height: fit-content;
+    direction: rtl;
+    display: flex;
+    text-decoration: none;
+    color: #00AD9A;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.resend-verification-code img {
+    width: 8px;
+    padding-right: 8px;
+}
+
+.resend-verification-tip {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    direction: rtl;
+    font-family: 'YekanBakh-light';
+    font-size: 12px;
+    color: var(--SemanticColor-Warning);
+    margin-top: 16px;
+}
+
+.resend-verification-tip img {
+    margin-left: 4px;
+    width: 16px;
+    margin-top: 2px;
+}
+
+.smscode-timer {
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 14px;
+
+}
+
+.smscode-timer p:nth-child(1) {
+    direction: rtl;
+    margin: 0;
+    color: var(--Text-EZ-01);
+    padding-right: 5px;
+}
+
+.smscode-timer p:nth-child(2) {
+    width: 40px;
+    margin: 0;
+    color: var(--Text-EZ-01);
+}

@@ -1,0 +1,47 @@
+.profilebutton-menu-item {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 54px;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid  var(--Divider-Background-Color);
+}
+
+.profilebutton-menu-item:hover {
+    background-color: #D1E9FC;
+}
+
+.profilebutton-menu-item-img {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    width: 70px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+
+.profilebutton-menu-item-img img {
+    width: 32px;
+}
+
+.profilebutton-menu-item-text {
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 16px;
+    color: var(--Text-EZ-01)
+}
+.profilebutton-menu-item-number {
+    font-family: 'YekanBakhFaNum-regular';
+    color: white;
+    padding: 4px 12px 0 12px;
+    background-color: var(--CTA-EZ);
+    border-radius: var(--Small-Radius);
+    margin: 0 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .profilebutton-menu-item-text {
+        font-size: 14px;
+    }
+}

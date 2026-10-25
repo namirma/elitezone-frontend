@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-3);
+      }
+    </style>
+    <filter id="drop-shadow-3" x="82.4519" y="82.3719" width="358.56" height="358.56" filterUnits="userSpaceOnUse">
+      <feOffset dx="5.6627" dy="5.6627"/>
+      <feGaussianBlur result="blur" stdDeviation="5.6627"/>
+      <feFlood flood-color="#000" flood-opacity=".44"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2">
+    <path d="M256,418.0886c89.5189,0,162.0886-72.5697,162.0886-162.0886s-72.5697-162.0886-162.0886-162.0886-162.0886,72.5697-162.0886,162.0886,72.5697,162.0886,162.0886,162.0886Z"/>
+  </g>
+  <g id="layer1">
+    <path id="path1009" class="cls-1" d="M168.1302,173.3548l68.1836,91.1673-68.6131,74.123h15.4428l60.071-64.8955,48.5349,64.8955h52.55l-72.0196-96.2956,63.8655-68.9947h-15.4428l-55.3235,59.7672-44.6997-59.7672h-52.5491ZM190.84,184.7301h24.1413l106.6065,142.5399h-24.1413l-106.6065-142.5399Z"/>
+  </g>
+</svg>

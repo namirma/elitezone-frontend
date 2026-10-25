@@ -1,0 +1,19 @@
+.checkbox_container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.checkbox_container label {
+  padding: 0;
+  font-family: 'YekanBakhFaNum-Light';
+  font-size: 14px;
+  color: var(--Disable-Button-Text03);
+  padding-right: 4px;
+}
+
+.checkbox_container input[type="checkbox"] {
+  padding: 0;
+  margin: 0;
+}

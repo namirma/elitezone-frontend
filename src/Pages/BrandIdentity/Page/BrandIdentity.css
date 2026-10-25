@@ -1,0 +1,24 @@
+.BrandIdentity_Container {
+    margin: 48px auto 0 auto;
+    max-width: 1320px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.BrandIdentity_Cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BrandIdentity_Cart>.title {
+    font-family: 'YekanBakh-Bold';
+    color: var(--Primary-EZ);
+    font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+    .BrandIdentity_Cart>.title {
+        font-size: 18px;
+    }
+}

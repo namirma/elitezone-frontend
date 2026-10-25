@@ -1,0 +1,21 @@
+.nameinput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.nameinput label {
+    font-family: 'YekanBakh-Regular';
+    font-size: 14px;
+    color: var(--Text-EZ-01);
+    text-align: end;
+    padding-bottom: 14px;
+}
+
+.EmptyName, .DigitInName, .UnSupportFormat, .NameContainLatin {
+    color: var(--SemanticColor-Error);
+    font-family: 'YekanBakh-Light';
+    font-size: 14px;
+    text-align: end;
+    padding-top: 10px;
+}

@@ -1,0 +1,84 @@
+.legalinfo {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.legalinfo-title {
+    font-family: 'YekanBakhFaNum-semiBold';
+    font-size: 18px;
+    color: var(--Text-EZ-01);
+    text-align: right;
+    padding: 24px 32px;
+}
+
+.legalinfo-description {
+    direction: rtl;
+    font-family: 'YekanBakhFaNum-Regular';
+    font-size: 16px;
+    color: var(--Text-EZ-01);
+    padding: 0 32px;
+}
+
+.legalinfo-button {
+    padding: 32px;
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.legalinfo-button div {
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    margin: 0;
+    width: max-content;
+    cursor: pointer;
+}
+
+.legalinfo-button div button {
+    border: none;
+    background: none;
+    padding: 0 0 0 8px;
+    clip-path: none;
+    font-family: 'YekanBakhFaNum-regular';
+    font-size: 14px;
+    color: var(--SemanticColor-Success);
+    cursor: pointer;
+}
+
+.legalinfo-button div img {
+    width: 8px;
+}
+
+@media (max-width: 1280px) {
+    .legalinfo-title {
+        font-size: 16px;
+    }
+
+    .legalinfo-description {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .legalinfo {
+        border-radius: 0;
+    }
+
+    .legalinfo-button  {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .legalinfo-button div:nth-child(2) {
+        margin-top: 24px;
+        justify-content: flex-start;
+    }
+
+}
