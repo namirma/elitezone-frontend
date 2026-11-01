@@ -4,7 +4,7 @@ import './UserProfile.css';
 import Navbar from '../../Home/Components/Navbar';
 import UserMenu from '../Components/UserMenu/UserMenu';
 import { ResponsiveContext } from '../../../Context/ResponsiveContext';
-import PWASlider from '../../../PWASilder/PWASlider';
+import PWASlider from '../../../PWASlider/PWASlider';
 import { useAppContext } from '../../../Context/AppContext';
 import { useToast } from '../../../PersonalFunction/Toast';
 
