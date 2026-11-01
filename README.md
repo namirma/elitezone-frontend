@@ -1,12 +1,11 @@
 # 🌐 EliteZone Frontend — Modern Web Application Portal
 
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.x-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 [![Leaflet](https://img.shields.io/badge/Leaflet-Interactive_Maps-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com/)
 [![Lottie](https://img.shields.io/badge/Lottie-Vector_Animations-00DDB3?style=for-the-badge&logo=lottie&logoColor=black)](https://lottiefiles.com/)
 
-> **EliteZone Frontend** is the official modern web application powering [elitezone.me](https://elitezone.me/). Built with **React 18** and **TypeScript**, it delivers a rich, highly interactive user experience with fluid animations, micro-interactions, geolocation maps, and adaptive video streaming.
+> **EliteZone Frontend** is the official modern web application powering [elitezone.me](https://elitezone.me/). Built with **React 18** (JavaScript, Create React App), it delivers a rich, highly interactive user experience with fluid animations, micro-interactions, geolocation maps, and adaptive video streaming.
 
 ---
 
@@ -33,17 +32,25 @@
 ## 📂 Project Architecture
 
 ```text
-ArioEliteFront/
-├── public/                 # Static assets, icons, and HTML template
-└── src/
-    ├── assets/             # Images, SVG icons, and Lottie animations
-    ├── components/         # Reusable component library (Cards, Modals, Buttons)
-    ├── hooks/              # Custom React hooks (Geolocation, Media, Window)
-    ├── pages/              # Routed page views (Home, Marketplace, Auth, Profile)
-    ├── services/           # API communication layer & endpoints
-    ├── styles/             # Global CSS and layout variables
-    ├── App.tsx             # Root layout and routing provider
-    └── index.tsx           # Application entrypoint
+elitezone-frontend/
+├── public/                 # Static assets, icons, fonts, and HTML template
+└── src/                    # Top-level layout (JavaScript, not TypeScript)
+    ├── App.js              # Root layout and routing provider
+    ├── index.js            # Application entrypoint
+    ├── index.css           # Global CSS
+    ├── fonts.css           # Font definitions
+    ├── Api/                # API communication layer & endpoints
+    ├── Buttons/            # Reusable button components and assets
+    ├── Contents/           # Shared content
+    ├── Context/            # React context providers
+    ├── Map/                # Map components
+    ├── Pages/              # Routed page views (Home, Roles, Auth, Profile, …)
+    ├── PersonalFunction/   # Shared helpers
+    ├── PrivateRoute/       # Authenticated-route guard
+    ├── PublicAssets/       # Shared public assets
+    ├── PWASilder/          # PWA slider (directory name as shipped)
+    ├── UserLoginDetection/ # Login detection and data loading
+    └── Video/              # Video components
 ```
 
 ---
