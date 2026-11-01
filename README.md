@@ -48,7 +48,7 @@ elitezone-frontend/
     ├── PersonalFunction/   # Shared helpers
     ├── PrivateRoute/       # Authenticated-route guard
     ├── PublicAssets/       # Shared public assets
-    ├── PWASilder/          # PWA slider (directory name as shipped)
+    ├── PWASlider/          # PWA slider
     ├── UserLoginDetection/ # Login detection and data loading
     └── Video/              # Video components
 ```
@@ -73,6 +73,36 @@ Runs the app in development mode at [http://localhost:3000](http://localhost:300
 npm run build
 ```
 Builds the app for production to the `build/` folder with optimal bundling.
+
+---
+
+## 🛠️ Install notes (pre-existing issues, resolved/documented)
+
+### Peer dependency: react-scripts 5 + TypeScript 5
+`react-scripts@5.0.1` declares TypeScript `^3.2.1 || ^4` as a
+peerOptional dependency, while this project pins `typescript@^5.4.5`.
+A strict `npm ci` therefore failed before this change with
+`ERESOLVE` (verified: `npm ci --dry-run` reproduced it). This is
+pre-existing and was not caused by any recent change.
+
+Resolution, kept deliberately minimal: a `.npmrc` with
+`legacy-peer-deps=true` is committed in this repo, and `npm ci`
+plus `npm run build` were verified with it (Node 24, npm 10).
+TypeScript itself was **not** removed: `src/` contains no `.ts` or
+`.tsx` files and there is no `tsconfig.json`, so it is not a source
+language here, but removing it from `package.json` without also
+regenerating the lockfile would have broken `npm ci` in a different
+way, so the documented install flag is the correct solve.
+
+### Lockfile name
+`package.json` says `elitezone-frontend`, while
+`package-lock.json` on GitHub still says `farwak-website` in two
+places (dependencies and versions are unchanged). A whole-file push
+of the 848 KB lockfile via the MCP CLI fails with
+`Argument list too long`, and no authenticated git push route is
+available in this environment, so the lockfile was **not** deleted
+or corrupted. Its name syncs on the next local `npm install`;
+dependencies are unaffected.
 
 ---
 
